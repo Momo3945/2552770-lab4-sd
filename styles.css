@@ -1,0 +1,17 @@
+button{
+    color: red;
+}
+section{
+    display: flex;
+    flex-direction: column;
+}
+#bordering-countries{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#country-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
