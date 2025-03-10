@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function displayCountryInfo(countryData) {
         countryInfoSection.innerHTML = `
             <h2>${countryData.name.common}</h2>
-            <p>Capital: ${countryData.capital ? countryData.capital[0] : 'N/A'}</p>
+            <p>Capital ${countryData.capital ? countryData.capital[0] : 'N/A'}</p>
             <p>Population: ${countryData.population.toLocaleString()}</p>
             <p>Region: ${countryData.region}</p>
             <img src="${countryData.flags.png}" alt="Flag of ${countryData.name.common}" width="150">
@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 bordersData.forEach(borderCountry => {
                     borderContent += `
                         <p>${borderCountry.name.common}</p>
-                        <img src="${borderCountry.flags.png}" alt="Flag of ${borderCountry.name.common}" width="150">
+                        <img src="${borderCountry.flags.png}" alt="Flag of ${borderCountry.name.common}" width="75">
                     `;
                 });
                 borderingCountriesSection.innerHTML = borderContent; 
